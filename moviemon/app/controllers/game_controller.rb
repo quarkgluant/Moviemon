@@ -70,9 +70,28 @@ class GameController < ApplicationController
     end
   end
 
-  def arrows(input)
-
+  def up
+    $player[:position][1]
+    $view = "world_map"
+    redirect_to :"#{$view}"
   end
 
+  def down
+    $player[:position][1]
+    $view = "world_map"
+    redirect_to :"#{$view}"
+  end
+
+  def right
+    $player[:position][0]
+    $view = "world_map"
+    redirect_to :"#{$view}"
+  end
+
+  def left
+    $player[:position][0]
+    $view = "world_map"
+    redirect_to :"#{$view}"
+  end
   
 end
