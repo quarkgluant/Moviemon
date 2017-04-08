@@ -12,13 +12,22 @@ class GameController < ApplicationController
   def shutdown
   end
 
+  def loading_game
+  end
+
+  def saving_game
+  end
+
+  def world_map
+  end
+
   def power
     if $view == 'shutdown'
       $view = 'title_screen'
-      redirect_to title_screen_path
+      redirect_to :"#{$view}"
     else
       $view = 'shutdown'
-      redirect_to shutdown_path
+      redirect_to :"#{$view}"
     end
   end
 
@@ -27,10 +36,13 @@ class GameController < ApplicationController
     when "loading_game", "saving_game"
       GameSession.new.save
       redirect_to world_map_path
+    else
+      redirect_to :"#{$view}"
     end
   end
 
   def buttonB
+    redirect_to :"#{$view}"
   end
 
   def select
@@ -72,17 +84,13 @@ class GameController < ApplicationController
   def up
     case $view
     when "world_map"
-      $player[:position][1]
+      $player[:position][1] -= 10
       $view = "world_map"
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
-      if $player[:slot] == 1
-        $player[:slot] = 3
-      elsif $player[:slot] == 2
-        $player[:slot] = 1
-      else 
-        $player[:slot] = 2
-      end
+      $player[:slot] = $player[:slot] > 1 ? $player[:slot] - 1 : 3
+      redirect_to :"#{$view}"
+    else
       redirect_to :"#{$view}"
     end
   end
@@ -90,17 +98,13 @@ class GameController < ApplicationController
   def down
     case $view
     when "world_map" 
-      $player[:position][1]
+      $player[:position][1] += 10
       $view = "world_map"
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
-      if $player[:slot] == 1
-        $player[:slot] = 2
-      elsif $player[:slot] == 2
-        $player[:slot] = 3
-      else 
-        $player[:slot] = 1
-      end
+      $player[:slot] = $player[:slot] < 3 ? $player[:slot] + 1 : 1
+      redirect_to :"#{$view}"
+    else
       redirect_to :"#{$view}"
     end
   end
@@ -108,7 +112,7 @@ class GameController < ApplicationController
   def right
     case $view
     when "world_map" 
-      $player[:position][0]
+      $player[:position][0] += 10
       $view = "world_map"
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
@@ -119,7 +123,7 @@ class GameController < ApplicationController
   def left
     case $view
     when "world_map" 
-      $player[:position][0]
+      $player[:position][0] -= 10
       $view = "world_map"
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
