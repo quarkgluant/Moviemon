@@ -7,11 +7,17 @@ class GameController < ApplicationController
 	def loading
 	end
 
+	def shutdown
+	end
+
 	def power
-		puts "hello"
-		$view = $view == 'shutdown' ? 'loading' : 'shutdown'
-		puts $view
-		redirect_to shutdown_path
+		if $view == 'shutdown'
+			$view = 'loading'
+			redirect_to loading_path
+		else
+			$view = 'shutdown'
+			redirect_to shutdown_path
+		end
 	end
 
 	def buttonA
