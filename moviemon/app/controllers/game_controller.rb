@@ -4,7 +4,7 @@ class GameController < ApplicationController
   $view ||= 'title_screen'
 # $selected =
 # $game = 
-  $player = {position: [0, 0], life: 20, strength: 5}
+  $player = {slot: 1, position: [0, 0], life: 20, strength: 5}
 
   def title_screen
   end
@@ -24,7 +24,7 @@ class GameController < ApplicationController
 
   def buttonA
     case $view
-    when "saving_game"
+    when "loading_game", "saving_game"
       GameSession.new.save
       redirect_to world_map_path
     end
@@ -58,7 +58,7 @@ class GameController < ApplicationController
   def start
     case $view
     when "title_screen" #launch new game
-      $player = {position: [0, 0], life: 20, strength: 5}
+      $player = {slot: 1, position: [0, 0], life: 20, strength: 5}
       $view = "world_map"
       redirect_to :"#{$view}"
     when "world_map", "battle"
@@ -70,27 +70,61 @@ class GameController < ApplicationController
   end
 
   def up
-    $player[:position][1]
-    $view = "world_map"
-    redirect_to :"#{$view}"
+    case $view
+    when "world_map"
+      $player[:position][1]
+      $view = "world_map"
+      redirect_to :"#{$view}"
+    when "loading_game", "saving_game"
+      if $player[:slot] == 1
+        $player[:slot] = 3
+      elsif $player[:slot] == 2
+        $player[:slot] = 1
+      else 
+        $player[:slot] = 2
+      end
+      redirect_to :"#{$view}"
+    end
   end
 
   def down
-    $player[:position][1]
-    $view = "world_map"
-    redirect_to :"#{$view}"
+    case $view
+    when "world_map" 
+      $player[:position][1]
+      $view = "world_map"
+      redirect_to :"#{$view}"
+    when "loading_game", "saving_game"
+      if $player[:slot] == 1
+        $player[:slot] = 2
+      elsif $player[:slot] == 2
+        $player[:slot] = 3
+      else 
+        $player[:slot] = 1
+      end
+      redirect_to :"#{$view}"
+    end
   end
 
   def right
-    $player[:position][0]
-    $view = "world_map"
-    redirect_to :"#{$view}"
+    case $view
+    when "world_map" 
+      $player[:position][0]
+      $view = "world_map"
+      redirect_to :"#{$view}"
+    when "loading_game", "saving_game"
+
+    end
   end
 
   def left
-    $player[:position][0]
-    $view = "world_map"
-    redirect_to :"#{$view}"
+    case $view
+    when "world_map" 
+      $player[:position][0]
+      $view = "world_map"
+      redirect_to :"#{$view}"
+    when "loading_game", "saving_game"
+
+    end
   end
   
 end

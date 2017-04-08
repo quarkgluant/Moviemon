@@ -1,8 +1,29 @@
-{
-  "position": [
-    0,
-    0
-  ],
-  "life": 20,
-  "strength": 5
-}
+[
+  {
+    "slot": 1,
+    "position": [
+      0,
+      0
+    ],
+    "life": 20,
+    "strength": 5
+  },
+  {
+    "slot": 2,
+    "position": [
+      0,
+      0
+    ],
+    "life": 20,
+    "strength": 5
+  },
+  {
+    "slot": 3,
+    "position": [
+      0,
+      0
+    ],
+    "life": 20,
+    "strength": 5
+  }
+]

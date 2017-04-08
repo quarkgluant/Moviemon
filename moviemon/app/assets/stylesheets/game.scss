@@ -54,7 +54,11 @@
 		padding: 20px;
 		height: 20px !important;
 		width: auto !important;
-		background-color: rgba(0, 0, 0, 0.2);
+		background-color: rgba(0, 0, 0, 0.15);
+	}
+	.save_slot.selected, {
+		font-style: bolder;
+		background-color: rgba(0, 0, 0, 0.3);
 	}
 
 	.gb_title {

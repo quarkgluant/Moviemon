@@ -9,7 +9,6 @@ Rails.application.routes.draw do
 
   # Inputs
   get '/power' => 'game#power'
-
   get '/up' => 'game#up'
   get '/down' => 'game#down'
   get '/right' => 'game#right'
