@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
 
-  get '/loading' => 'game#loading', as: :loading 
-  get '/shutdown' => 'game#shutdown'
+  # Pages
+  get '/title_screen' => 'game#title_screen', as: :title_screen 
+  get '/shutdown' => 'game#shutdown', as: :shutdown
+  get '/loading_game' => 'game#loading_game', as: :loading_game
+  get '/saving_game' => 'game#saving_game', as: :saving_game
+  get '/world_map' => 'game#world_map', as: :world_map
+
+  # Inputs
   get '/power' => 'game#power'
-  root 'game#loading'
+
+  get '/select' => 'game#select'
+  get '/start' => 'game#start'
+
+  root 'game#title_screen'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

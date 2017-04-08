@@ -1,37 +1,67 @@
 class GameController < ApplicationController
-	$view = 'loading'
-#	$selected =
-#	$game = 
-#	$player =
+  $view ||= 'title_screen'
+# $selected =
+# $game = 
+# $player =
 
-	def loading
-	end
+  def title_screen
+  end
 
-	def shutdown
-	end
+  def shutdown
+  end
 
-	def power
-		if $view == 'shutdown'
-			$view = 'loading'
-			redirect_to loading_path
-		else
-			$view = 'shutdown'
-			redirect_to shutdown_path
-		end
-	end
+  def power
+    if $view == 'shutdown'
+      $view = 'title_screen'
+      redirect_to title_screen_path
+    else
+      $view = 'shutdown'
+      redirect_to shutdown_path
+    end
+  end
 
-	def buttonA
-	end
+  def buttonA
+  end
 
-	def buttonB
-	end
+  def buttonB
+  end
 
-	def select
-	end
+  def select
+    case $view
+    when "title_screen"
+      $view = 'loading_game'
+      redirect_to :"#{$view}"
+    when "moviedex"
+      $view = "world_map"
+      redirect_to :"#{$view}"      
+    when "world_map"
+      $view = "saving_game"
+      redirect_to :"#{$view}"      
+    when "saving_game"
+      $view = "world_map"
+      redirect_to :"#{$view}"
+    when "loading_game"
+      $view = "title_screen"
+      redirect_to :"#{$view}"
+    else
+      redirect_to :"#{$view}"
+    end
+  end
 
-	def start
-	end
+  def start
+    case $view
+    when "title_screen"
+      $view = "world_map"
+      redirect_to :"#{$view}"
+    when "world_map", "battle"
+      $view = "moviedex"
+      redirect_to :"#{$view}"
+    else
+      redirect_to :"#{$view}"
+    end
+  end
 
-	def arrows(input)
-	end
+  def arrows(input)
+
+  end
 end
