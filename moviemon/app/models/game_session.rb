@@ -31,16 +31,23 @@ class GameSession
  	
 
 	def get_movie
+		return self.get_my_movies
 	end
-
-	private
 
 	def get_my_movies
 		@my_movies = []
 		20.times {@my_movies << JSON.parse(Net::HTTP.get(URI('https://random-movie.herokuapp.com/random'))) }
 		@my_moviemons = []
-		@my_movies.each{|movie| @my_moviemons << Movie.new(movie)}
-		@my_moviemons
+		@my_movies.each{|movie| @my_moviemons << { title: movie["Title"],
+												    year: movie["Year"],
+												    director: movie["Director"],
+												    genre: movie["Genre"],
+												    rating: movie["Ratings"][0]["Value"],
+												    poster: movie["Poster"],
+												    strength: movie["Ratings"][0]["Value"].to_i,
+												    life: movie["Ratings"][0]["Value"].to_i * 2
+												}}
+		return @my_moviemons
 	end
 
 end

@@ -2,28 +2,290 @@
   {
     "slot": 1,
     "position": [
-      20,
-      80
+      0,
+      0
     ],
     "life": 20,
-    "strength": 5
+    "strength": 5,
+    "moviedex": [
+
+    ]
   },
   {
     "slot": 2,
     "position": [
       20,
-      0
+      20
     ],
     "life": 20,
-    "strength": 5
+    "strength": 5,
+    "movies": [
+      {
+        "title": "Interstellar",
+        "year": "2014",
+        "director": "Christopher Nolan",
+        "genre": "Adventure, Drama, Sci-Fi",
+        "rating": "8.6/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "No Country for Old Men",
+        "year": "2007",
+        "director": "Ethan Coen, Joel Coen",
+        "genre": "Crime, Drama, Thriller",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Serenity",
+        "year": "2005",
+        "director": "Joss Whedon",
+        "genre": "Action, Adventure, Sci-Fi",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5YjQ0MGQtOTdjZS00OGZhLTk1ZGItMThjOGFiZmMxYWRjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "12 Years a Slave",
+        "year": "2013",
+        "director": "Steve McQueen",
+        "genre": "Biography, Drama, History",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMTEzODkyN15BMl5BanBnXkFtZTcwNTU4NTc4OQ@@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "United 93",
+        "year": "2006",
+        "director": "Paul Greengrass",
+        "genre": "Drama, History, Thriller",
+        "rating": "7.6/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1Nzc3NjAwOF5BMl5BanBnXkFtZTcwNzYzMjYzMQ@@._V1_SX300.jpg",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "Back to the Future",
+        "year": "1985",
+        "director": "Robert Zemeckis",
+        "genre": "Adventure, Comedy, Sci-Fi",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Persepolis",
+        "year": "2007",
+        "director": "Vincent Paronnaud, Marjane Satrapi",
+        "genre": "Animation, Biography, Drama",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzIxMDI0Nzc4NV5BMl5BanBnXkFtZTYwNjU5OTI4._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Memento",
+        "year": "2000",
+        "director": "Christopher Nolan",
+        "genre": "Mystery, Thriller",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Into the Wild",
+        "year": "2007",
+        "director": "Sean Penn",
+        "genre": "Adventure, Biography, Drama",
+        "rating": "8.2/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTAwNDEyODU1MjheQTJeQWpwZ15BbWU2MDc3NDQwNw@@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Raiders of the Lost Ark",
+        "year": "1981",
+        "director": "Steven Spielberg",
+        "genre": "Action, Adventure",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0ODEzMTc1Nl5BMl5BanBnXkFtZTcwODM2MjAxNA@@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Let the Right One In",
+        "year": "2008",
+        "director": "Tomas Alfredson",
+        "genre": "Drama, Horror, Romance",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1OTY2MTM5MF5BMl5BanBnXkFtZTcwNzQ5Mjc5MQ@@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Psycho",
+        "year": "1960",
+        "director": "Alfred Hitchcock",
+        "genre": "Horror, Mystery, Thriller",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDI3OWRmOTEtOWJhYi00N2JkLTgwNGItMjdkN2U0NjFiZTYwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Matrix",
+        "year": "1999",
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "genre": "Action, Sci-Fi",
+        "rating": "8.7/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "High and Low",
+        "year": "1963",
+        "director": "Akira Kurosawa",
+        "genre": "Crime, Drama, Mystery",
+        "rating": "8.4/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGQ1NWZlYjctNDJmOS00MmU2LTg1ODItNmZiM2ZkNzJhNDI0XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Dersu Uzala",
+        "year": "1975",
+        "director": "Akira Kurosawa",
+        "genre": "Adventure, Biography, Drama",
+        "rating": "8.3/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzdiYzM1ZDktOGMzMi00MGM0LWE1NjMtOTVjOWFiNGJlYTgwL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Bandit",
+        "year": "1996",
+        "director": "Yavuz Turgul",
+        "genre": "Crime, Drama, Thriller",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOGQ4ZjFmYjktOGNkNS00OWYyLWIyZjgtMGJjM2U1ZTA0ZTlhXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Amores Perros",
+        "year": "2000",
+        "director": "Alejandro González Iñárritu",
+        "genre": "Drama, Thriller",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjYwYzliYTktMzk3MS00MzE0LTllM2QtMDk3MTFmOGQ2MjE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Deliverance",
+        "year": "1972",
+        "director": "John Boorman",
+        "genre": "Adventure, Drama, Thriller",
+        "rating": "7.7/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjBhYzU3NWItOWZjMy00NjI5LWFmYmItZmIyOWFlMDIxMWNiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "Stalag 17",
+        "year": "1953",
+        "director": "Billy Wilder",
+        "genre": "Drama, War",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDMyNGU0NjUtNTIxMC00ZmU2LWE0ZGItZTdkNGVlODI2ZDcyL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 16
+      }
+    ],
+    "moviedex": [
+
+    ]
   },
   {
     "slot": 3,
     "position": [
-      0,
-      0
+      50,
+      60
     ],
     "life": 20,
-    "strength": 5
+    "strength": 9,
+    "movies": [
+      {
+        "title": "Spartacus",
+        "year": "1960",
+        "director": "Stanley Kubrick",
+        "genre": null,
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjc4MTUxN2UtMmU1NC00MjQyLTk3YTYtZTQ0YzEzZDc0Njc0XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "All About My Mother",
+        "year": "1999",
+        "director": "Pedro Almodóvar",
+        "genre": null,
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3OTg3MTk2NV5BMl5BanBnXkFtZTcwNzA4ODMyMQ@@._V1_SX300.jpg",
+        "strength": 7,
+        "life": 14
+      }
+    ],
+    "moviedex": [
+      {
+        "title": "King Kong",
+        "year": "1933",
+        "director": "Merian C. Cooper, Ernest B. Schoedsack",
+        "genre": null,
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODM0MTEyMjQxOF5BMl5BanBnXkFtZTgwNzYwNTk1MjE@._V1._CR8.883331298828125,6.5333404541015625,344,488_SY132_CR2,0,89,132_AL_.jpg_V1_SX300.jpg",
+        "strength": 7,
+        "life": -1
+      },
+      {
+        "title": "The Big Sleep",
+        "year": "1946",
+        "director": "Howard Hawks",
+        "genre": null,
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjg5MjM5MzY5M15BMl5BanBnXkFtZTgwNjg3MzgyMjE@._V1_SX300.jpg",
+        "strength": 8,
+        "life": -2
+      },
+      {
+        "title": "The Right Stuff",
+        "year": "1983",
+        "director": "Philip Kaufman",
+        "genre": null,
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwMDA3MTYtZjhjMi00ODFmLTg5ZTAtYzgwN2NlODgzMmUwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "strength": 7,
+        "life": 0
+      },
+      {
+        "title": "The Sixth Sense",
+        "year": "1999",
+        "director": "M. Night Shyamalan",
+        "genre": null,
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWM4NTFhYjctNzUyNi00NGMwLTk3NTYtMDIyNTZmMzRlYmQyXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_SX300.jpg",
+        "strength": 8,
+        "life": 0
+      }
+    ]
   }
 ]

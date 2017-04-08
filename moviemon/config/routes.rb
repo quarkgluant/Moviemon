@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get '/world_map' => 'game#world_map', as: :world_map
   get '/battle' => 'game#battle', as: :battle
   get '/moviedex' => 'game#moviedex', as: :moviedex
+  get '/lose' => 'game#lose', as: :lose
+  get '/victory' => 'game#victory', as: :victory
+  get '/coward' => 'game#coward', as: :coward
 
   # Inputs
   get '/power' => 'game#power'
@@ -21,7 +24,7 @@ Rails.application.routes.draw do
   get '/buttonA' => 'game#buttonA'
   get '/buttonB' => 'game#buttonB'
 
-  root 'game#title_screen'
+  root 'game#power'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
