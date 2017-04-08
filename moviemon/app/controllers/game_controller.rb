@@ -4,7 +4,7 @@ class GameController < ApplicationController
   $view ||= 'title_screen'
 # $selected =
 # $game = 
- $player = {position: [0, 0], life: 20, strength: 5}
+  $player = {position: [0, 0], life: 20, strength: 5}
 
   def title_screen
   end
@@ -25,8 +25,7 @@ class GameController < ApplicationController
   def buttonA
     case $view
     when "saving_game"
-      a = GameSession.new
-      a.save 
+      GameSession.new.save
       redirect_to world_map_path
     end
   end
@@ -74,4 +73,6 @@ class GameController < ApplicationController
   def arrows(input)
 
   end
+
+  
 end
