@@ -43,6 +43,7 @@ class GameController < ApplicationController
       $view = "world_map"
       redirect_to :"#{$view}"      
     when "world_map"
+      get_my_movies.inspect
       $view = "saving_game"
       redirect_to :"#{$view}"      
     when "saving_game"
