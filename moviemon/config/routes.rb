@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get '/loading_game' => 'game#loading_game', as: :loading_game
   get '/saving_game' => 'game#saving_game', as: :saving_game
   get '/world_map' => 'game#world_map', as: :world_map
+  get '/battle' => 'game#battle', as: :battle
+  get '/moviedex' => 'game#moviedex', as: :moviedex
 
   # Inputs
   get '/power' => 'game#power'

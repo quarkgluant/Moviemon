@@ -21,6 +21,12 @@ class GameController < ApplicationController
   def world_map
   end
 
+  def battle
+  end
+
+  def moviedex
+  end
+
   def power
     if $view == 'shutdown'
       $view = 'title_screen'
@@ -43,6 +49,7 @@ class GameController < ApplicationController
   end
 
   def buttonB
+    $view = 'battle' #TODO CHANGE THAT
     redirect_to :"#{$view}"
   end
 
