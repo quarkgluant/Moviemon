@@ -1,8 +1,10 @@
+#require '../models/game_sessions.rb'
+
 class GameController < ApplicationController
   $view ||= 'title_screen'
 # $selected =
 # $game = 
-# $player =
+ $player = {position: [0, 0], life: 20, strength: 5}
 
   def title_screen
   end
@@ -21,6 +23,12 @@ class GameController < ApplicationController
   end
 
   def buttonA
+    case $view
+    when "saving_game"
+      a = GameSession.new
+      a.save 
+      redirect_to world_map_path
+    end
   end
 
   def buttonB
@@ -50,12 +58,13 @@ class GameController < ApplicationController
 
   def start
     case $view
-    when "title_screen"
+    when "title_screen" #launch new game
+      $player = {position: [0, 0], life: 20, strength: 5}
       $view = "world_map"
       redirect_to :"#{$view}"
     when "world_map", "battle"
       $view = "moviedex"
-      redirect_to :"#{$view}"
+      redirect_to :"#{$view}"   
     else
       redirect_to :"#{$view}"
     end

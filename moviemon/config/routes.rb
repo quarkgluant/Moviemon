@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get '/select' => 'game#select'
   get '/start' => 'game#start'
+  get '/buttonA' => 'game#buttonA'
+  get '/buttonB' => 'game#buttonB'
 
   root 'game#title_screen'
 
