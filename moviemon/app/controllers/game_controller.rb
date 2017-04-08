@@ -34,6 +34,7 @@ class GameController < ApplicationController
   def buttonA
     case $view
     when "loading_game", "saving_game"
+      $view = "world_map"
       GameSession.new.save
       redirect_to world_map_path
     else
@@ -84,8 +85,7 @@ class GameController < ApplicationController
   def up
     case $view
     when "world_map"
-      $player[:position][1] -= 10
-      $view = "world_map"
+      $player[:position][1] = $player[:position][1] < 10 ? $player[:position][1] : $player[:position][1] -= 10
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
       $player[:slot] = $player[:slot] > 1 ? $player[:slot] - 1 : 3
@@ -98,8 +98,7 @@ class GameController < ApplicationController
   def down
     case $view
     when "world_map" 
-      $player[:position][1] += 10
-      $view = "world_map"
+      $player[:position][1] = $player[:position][1] > 80 ? $player[:position][1] : $player[:position][1] += 10
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
       $player[:slot] = $player[:slot] < 3 ? $player[:slot] + 1 : 1
@@ -112,8 +111,7 @@ class GameController < ApplicationController
   def right
     case $view
     when "world_map" 
-      $player[:position][0] += 10
-      $view = "world_map"
+      $player[:position][0] = $player[:position][0] > 80 ? $player[:position][0] : $player[:position][0] += 10
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
 
@@ -123,8 +121,7 @@ class GameController < ApplicationController
   def left
     case $view
     when "world_map" 
-      $player[:position][0] -= 10
-      $view = "world_map"
+      $player[:position][0] = $player[:position][0] < 10 ? $player[:position][0] : $player[:position][0] -= 10
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
 
