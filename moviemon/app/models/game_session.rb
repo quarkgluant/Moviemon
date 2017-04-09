@@ -32,7 +32,7 @@ class GameSession
 
   def get_movie
     @my_movies = []
-    50.times { @my_movies << JSON.parse(Net::HTTP.get(URI("https://random-movie.herokuapp.com/random"))) }
+    30.times { @my_movies << JSON.parse(Net::HTTP.get(URI("https://random-movie.herokuapp.com/random"))) }
     @my_moviemons = []
     @my_movies.each do |movie|
       @my_moviemons << {

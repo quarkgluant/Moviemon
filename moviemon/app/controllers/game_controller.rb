@@ -32,9 +32,9 @@ class GameController < ApplicationController
   end
 
   def moviedex
-    # puts $player[:moviedex]
+    # puts "player moviex" + $player[:moviedex]
     @film = $player[:moviedex][$player[:index]] unless $player[:index].nil?
-    puts $player[:moviedex][ $player[:index] ]
+    # puts $player[:moviedex][ $player[:index] ]
   end
 
   def victory
@@ -52,13 +52,15 @@ class GameController < ApplicationController
       redirect_to :"#{$view}"
     else
       $view = 'shutdown'
+      imdb = GameSession.new.get_movie
         $player = {
         slot: 1, 
         position: [0, 0], 
         life: 20, 
         strength: 5, 
         moviedex: [],
-        index: 0
+        index: 0,
+        movies: imdb
       }
       redirect_to :"#{$view}"
     end
@@ -132,7 +134,15 @@ class GameController < ApplicationController
     case $view
     when "title_screen" #launch new game
       imdb = GameSession.new.get_movie
-      $player = {slot: 1, position: [0, 0], life: 20, strength: 5, movies: imdb, moviedex: [], index: 0}
+      $player = {
+        slot: 1, 
+        position: [0, 0], 
+        life: 20, 
+        strength: 5, 
+        movies: imdb, 
+        index: 0, 
+        moviedex: []
+      }
       $view = "world_map"
       redirect_to :"#{$view}"
     when "world_map"
@@ -147,7 +157,7 @@ class GameController < ApplicationController
     case $view
     when "world_map"
       $player[:position][1] = $player[:position][1] < 10 ? $player[:position][1] : $player[:position][1] -= 10
-      if rand(100) > 50 && $player[:position][0] < 90
+      if rand(100) > 60 && $player[:position][0] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -164,7 +174,7 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][1] = $player[:position][1] > 80 ? $player[:position][1] : $player[:position][1] += 10
-      if rand(100) > 50 && $player[:position][1] < 90
+      if rand(100) > 60 && $player[:position][1] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -181,7 +191,7 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][0] = $player[:position][0] > 80 ? $player[:position][0] : $player[:position][0] += 10
-      if rand(100) > 50 && $player[:position][0] < 90
+      if rand(100) > 60 && $player[:position][0] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -202,7 +212,7 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][0] = $player[:position][0] < 10 ? $player[:position][0] : $player[:position][0] -= 10
-      if rand(100) > 50 && $player[:position][0] < 90
+      if rand(100) > 60 && $player[:position][0] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
