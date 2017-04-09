@@ -25,8 +25,8 @@ class GameSession
 
   def load
     file = File.read("public/save.json")
-    data_hash = JSON.parse(file)
-    $player = data_hash[$player[:slot]]
+    data_hash = JSON.parse(file, :symbolize_names => true)
+    $player = data_hash[$player[:slot] - 1]
   end
   
 
