@@ -4,7 +4,13 @@ class GameController < ApplicationController
   $view ||= 'title_screen'
 # $selected =
 # $game = 
-  $player = {slot: 1, position: [0, 0], life: 20, strength: 5, moviedex: []}
+  $player ||= {
+    slot: 1, 
+    position: [0, 0], 
+    life: 20, 
+    strength: 5, 
+    moviedex: []
+  }
 
   def title_screen
   end
@@ -42,6 +48,13 @@ class GameController < ApplicationController
       redirect_to :"#{$view}"
     else
       $view = 'shutdown'
+        $player = {
+        slot: 1, 
+        position: [0, 0], 
+        life: 20, 
+        strength: 5, 
+        moviedex: []
+      }
       redirect_to :"#{$view}"
     end
   end
