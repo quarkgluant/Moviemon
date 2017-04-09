@@ -2,91 +2,130 @@
   {
     "slot": 1,
     "position": [
-      0,
+      50,
       0
     ],
     "life": 20,
-    "strength": 5,
-    "moviedex": [
-
-    ]
-  },
-  {
-    "slot": 2,
-    "position": [
-      20,
-      20
-    ],
-    "life": 20,
-    "strength": 5,
+    "strength": 7,
     "movies": [
       {
-        "title": "Interstellar",
-        "year": "2014",
-        "director": "Christopher Nolan",
-        "genre": "Adventure, Drama, Sci-Fi",
-        "rating": "8.6/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "No Country for Old Men",
-        "year": "2007",
-        "director": "Ethan Coen, Joel Coen",
-        "genre": "Crime, Drama, Thriller",
-        "rating": "8.1/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMTc5MTE1MQ@@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "Serenity",
-        "year": "2005",
-        "director": "Joss Whedon",
-        "genre": "Action, Adventure, Sci-Fi",
-        "rating": "8.0/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5YjQ0MGQtOTdjZS00OGZhLTk1ZGItMThjOGFiZmMxYWRjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "12 Years a Slave",
-        "year": "2013",
-        "director": "Steve McQueen",
-        "genre": "Biography, Drama, History",
-        "rating": "8.1/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMTEzODkyN15BMl5BanBnXkFtZTcwNTU4NTc4OQ@@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "United 93",
+        "title": "Apocalypto",
         "year": "2006",
-        "director": "Paul Greengrass",
-        "genre": "Drama, History, Thriller",
-        "rating": "7.6/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1Nzc3NjAwOF5BMl5BanBnXkFtZTcwNzYzMjYzMQ@@._V1_SX300.jpg",
+        "director": "Mel Gibson",
+        "genre": "Action, Adventure, Drama",
+        "rating": "7.8/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzhmNGMzMDMtZDM0Yi00MmVmLWExYjAtZDhjZjcxZDM0MzJhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "synopsis": "As the Mayan kingdom faces its decline, the rulers insist the key to prosperity is to build more temples and offer human sacrifices. Jaguar Paw, a young man captured for sacrifice, flees to avoid his fate.",
         "strength": 7,
         "life": 14
       },
       {
-        "title": "Back to the Future",
-        "year": "1985",
-        "director": "Robert Zemeckis",
-        "genre": "Adventure, Comedy, Sci-Fi",
-        "rating": "8.5/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "title": "The Shop Around the Corner",
+        "year": "1940",
+        "director": "Ernst Lubitsch",
+        "genre": "Comedy, Drama, Romance",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI3ODcwODcwOF5BMl5BanBnXkFtZTgwMTgwMDI0MjE@._V1_SX300.jpg",
+        "synopsis": "Two employees at a gift shop can barely stand each other, without realizing that they are falling in love through the post as each other's anonymous pen pal.",
         "strength": 8,
         "life": 16
       },
       {
-        "title": "Persepolis",
-        "year": "2007",
-        "director": "Vincent Paronnaud, Marjane Satrapi",
-        "genre": "Animation, Biography, Drama",
+        "title": "8½",
+        "year": "1963",
+        "director": "Federico Fellini",
+        "genre": "Drama, Fantasy",
         "rating": "8.1/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzIxMDI0Nzc4NV5BMl5BanBnXkFtZTYwNjU5OTI4._V1_SX300.jpg",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4MTA0NjEzMF5BMl5BanBnXkFtZTgwMDg4NDYxMzE@._V1_SX300.jpg",
+        "synopsis": "A harried movie director retreats into his memories and fantasies.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Black Book",
+        "year": "2006",
+        "director": "Paul Verhoeven",
+        "genre": "Drama, Thriller, War",
+        "rating": "7.8/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODFlNTI0ZWQtOTcxNC00OTc0LTkwZDUtMmNkM2I1ZWFlYzZkXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
+        "synopsis": "In the Nazi-occupied Netherlands during World War II, a Jewish singer infiltrates the regional Gestapo headquarters for the Dutch resistance.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "Zodiac",
+        "year": "2007",
+        "director": "David Fincher",
+        "genre": "Crime, Drama, History",
+        "rating": "7.7/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNjc2NzAwNF5BMl5BanBnXkFtZTcwMDg3NzMzMw@@._V1_SX300.jpg",
+        "synopsis": "In the late 1960s/early 1970s, a San Francisco cartoonist becomes an amateur detective obsessed with tracking down the Zodiac Killer, an unidentified individual who terrorizes Northern California with a killing spree.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "The Big Sleep",
+        "year": "1946",
+        "director": "Howard Hawks",
+        "genre": "Crime, Film-Noir, Mystery",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjg5MjM5MzY5M15BMl5BanBnXkFtZTgwNjg3MzgyMjE@._V1_SX300.jpg",
+        "synopsis": "Private detective Philip Marlowe is hired by a rich family. Before the complex case is over, he's seen murder, blackmail, and what might be love.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Dial M for Murder",
+        "year": "1954",
+        "director": "Alfred Hitchcock",
+        "genre": "Crime, Film-Noir, Thriller",
+        "rating": "8.2/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNzc4ODk4N15BMl5BanBnXkFtZTcwMDE5ODEwNA@@._V1_SX300.jpg",
+        "synopsis": "An ex-tennis pro carries out a plot to murder his wife. When things go wrong, he improvises a brilliant plan B.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Vertigo",
+        "year": "1958",
+        "director": "Alfred Hitchcock",
+        "genre": "Mystery, Romance, Thriller",
+        "rating": "8.4/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTE4ODEwZDUtNDFjOC00NjAxLWEzYTQtYTI1NGVmZmFlNjdiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "synopsis": "A San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Graduate",
+        "year": "1967",
+        "director": "Mike Nichols",
+        "genre": "Comedy, Drama",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0ODc4MDk4Nl5BMl5BanBnXkFtZTcwMTEzNzgzNA@@._V1_SX300.jpg",
+        "synopsis": "A disillusioned college graduate finds himself torn between his older lover and her daughter.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "No Man's Land",
+        "year": "2001",
+        "director": "Danis Tanovic",
+        "genre": "Drama, War",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTE5MTYwMjUzN15BMl5BanBnXkFtZTYwOTA1Mjg3._V1_SX300.jpg",
+        "synopsis": "Bosnia and Herzegovina during 1993 at the time of the heaviest fighting between the two warring sides. Two soldiers from opposing sides in the conflict, Nino and Ciki, become trapped in no man's land, whilst a third soldier becomes a living booby trap.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Aguirre, the Wrath of God",
+        "year": "1972",
+        "director": "Werner Herzog",
+        "genre": "Adventure, Biography, Drama",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjRkY2VhYzMtZWQyNS00OTY2LWE5NTAtYjlhNmQyYzE5MmUxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "synopsis": "In the 16th century, the ruthless and insane Don Lope de Aguirre leads a Spanish expedition in search of El Dorado.",
         "strength": 8,
         "life": 16
       },
@@ -97,108 +136,328 @@
         "genre": "Mystery, Thriller",
         "rating": "8.5/10",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "synopsis": "A man juggles searching for his wife's murderer and keeping his short-term memory loss from being an obstacle.",
         "strength": 8,
         "life": 16
       },
       {
-        "title": "Into the Wild",
-        "year": "2007",
-        "director": "Sean Penn",
-        "genre": "Adventure, Biography, Drama",
-        "rating": "8.2/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTAwNDEyODU1MjheQTJeQWpwZ15BbWU2MDc3NDQwNw@@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "Raiders of the Lost Ark",
-        "year": "1981",
-        "director": "Steven Spielberg",
-        "genre": "Action, Adventure",
-        "rating": "8.5/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0ODEzMTc1Nl5BMl5BanBnXkFtZTcwODM2MjAxNA@@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "Let the Right One In",
-        "year": "2008",
-        "director": "Tomas Alfredson",
-        "genre": "Drama, Horror, Romance",
-        "rating": "8.0/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1OTY2MTM5MF5BMl5BanBnXkFtZTcwNzQ5Mjc5MQ@@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "Psycho",
-        "year": "1960",
-        "director": "Alfred Hitchcock",
-        "genre": "Horror, Mystery, Thriller",
-        "rating": "8.5/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDI3OWRmOTEtOWJhYi00N2JkLTgwNGItMjdkN2U0NjFiZTYwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "The Matrix",
-        "year": "1999",
-        "director": "Lana Wachowski, Lilly Wachowski",
-        "genre": "Action, Sci-Fi",
-        "rating": "8.7/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "High and Low",
-        "year": "1963",
-        "director": "Akira Kurosawa",
-        "genre": "Crime, Drama, Mystery",
-        "rating": "8.4/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGQ1NWZlYjctNDJmOS00MmU2LTg1ODItNmZiM2ZkNzJhNDI0XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "Dersu Uzala",
-        "year": "1975",
-        "director": "Akira Kurosawa",
-        "genre": "Adventure, Biography, Drama",
-        "rating": "8.3/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzdiYzM1ZDktOGMzMi00MGM0LWE1NjMtOTVjOWFiNGJlYTgwL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "The Bandit",
-        "year": "1996",
-        "director": "Yavuz Turgul",
-        "genre": "Crime, Drama, Thriller",
-        "rating": "8.5/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOGQ4ZjFmYjktOGNkNS00OWYyLWIyZjgtMGJjM2U1ZTA0ZTlhXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "Amores Perros",
-        "year": "2000",
-        "director": "Alejandro González Iñárritu",
-        "genre": "Drama, Thriller",
-        "rating": "8.1/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjYwYzliYTktMzk3MS00MzE0LTllM2QtMDk3MTFmOGQ2MjE0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 16
-      },
-      {
-        "title": "Deliverance",
-        "year": "1972",
-        "director": "John Boorman",
-        "genre": "Adventure, Drama, Thriller",
-        "rating": "7.7/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjBhYzU3NWItOWZjMy00NjI5LWFmYmItZmIyOWFlMDIxMWNiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "title": "The Quiet Man",
+        "year": "1952",
+        "director": "John Ford",
+        "genre": "Comedy, Drama, Romance",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWM1ZDhlM2MtNDNmMi00MDk4LTg5MjgtODE4ODk1MjYxOTIwXkEyXkFqcGdeQXVyNjc0MzMzNjA@._V1_SX300.jpg",
+        "synopsis": "A retired American boxer returns to the village of his birth in Ireland, where he finds love.",
         "strength": 7,
         "life": 14
+      },
+      {
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "year": "1964",
+        "director": "Stanley Kubrick",
+        "genre": "Comedy",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTkxYjUxNDYtZGY0My00NTc2LThiZmYtNmNmNmU0NGVkZWYwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+        "synopsis": "An insane general triggers a path to nuclear holocaust that a war room full of politicians and generals frantically try to stop.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Wild Bunch",
+        "year": "1969",
+        "director": "Sam Peckinpah",
+        "genre": "Action, Adventure, Western",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGUyYTZmOWItMDJhMi00N2IxLWIyNDMtNjUxM2ZiYmU5YWU1XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "synopsis": "An aging group of outlaws look for one last big score as the \"traditional\" American West is disappearing around them.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "American History X",
+        "year": "1998",
+        "director": "Tony Kaye",
+        "genre": "Crime, Drama",
+        "rating": "8.6/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2E2MWU5ZDktOTQ0OS00NGIzLTg4YTgtYjFhNTRlMjA1NzFjL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+        "synopsis": "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Right Stuff",
+        "year": "1983",
+        "director": "Philip Kaufman",
+        "genre": "Adventure, Biography, Drama",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwMDA3MTYtZjhjMi00ODFmLTg5ZTAtYzgwN2NlODgzMmUwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "synopsis": "The story of the original Mercury 7 astronauts and their macho, seat-of-the-pants approach to the space program.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "The Blues Brothers",
+        "year": "1980",
+        "director": "John Landis",
+        "genre": "Action, Comedy, Crime",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzdhOTJmYmQtMmE0OS00ZDMyLWFkZDItZmZmMGJlNGUyNjNhXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
+        "synopsis": "Jake Blues, just out from prison, puts together his old band to save the Catholic home where he and brother Elwood were raised.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "Duck Soup",
+        "year": "1933",
+        "director": "Leo McCarey",
+        "genre": "Comedy, Musical, War",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmYxZGU2NWYtNzQxZS00NmEyLWIzN2YtMDk5MWM0ODc5ZTE4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+        "synopsis": "Rufus T. Firefly is named president/dictator of bankrupt Freedonia and declares war on neighboring Sylvania over the love of wealthy Mrs. Teasdale.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Insider",
+        "year": "1999",
+        "director": "Michael Mann",
+        "genre": "Biography, Drama, Thriller",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODg0YjAzNDQtOGFkMi00Yzk2LTg1NzYtYTNjY2UwZTM2ZDdkL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "synopsis": "A research chemist comes under personal and professional attack when he decides to appear in a \"60 Minutes\" expose on Big Tobacco.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "Hotel Rwanda",
+        "year": "2004",
+        "director": "Terry George",
+        "genre": "Biography, Drama, History",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI2MzQyNTc1M15BMl5BanBnXkFtZTYwMjExNjc3._V1_SX300.jpg",
+        "synopsis": "Paul Rusesabagina was a hotel manager who housed over a thousand Tutsi refugees during their struggle against the Hutu militia in Rwanda.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Great Dictator",
+        "year": "1940",
+        "director": "Charles Chaplin",
+        "genre": "Comedy, Drama, War",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmExYWJjNTktNGUyZS00ODhmLTkxYzAtNWIzOGEyMGNiMmUwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "synopsis": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Full Metal Jacket",
+        "year": "1987",
+        "director": "Stanley Kubrick",
+        "genre": "Drama, War",
+        "rating": "8.3/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzc2ZThkOGItZGY5YS00MDYwLTkyOTAtNDRmZWIwMGRhYTc0L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "synopsis": "A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Manchurian Candidate",
+        "year": "1962",
+        "director": "John Frankenheimer",
+        "genre": "Drama, Thriller",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTY0ZTA1ZjUtN2MyNi00ZGRmLWExYmMtOTkyNzI1NGQ2Y2RlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "synopsis": "A former prisoner of war is brainwashed as an unwitting assassin for an international Communist conspiracy.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "year": "1964",
+        "director": "Stanley Kubrick",
+        "genre": "Comedy",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTkxYjUxNDYtZGY0My00NTc2LThiZmYtNmNmNmU0NGVkZWYwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+        "synopsis": "An insane general triggers a path to nuclear holocaust that a war room full of politicians and generals frantically try to stop.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "M",
+        "year": "1931",
+        "director": "Fritz Lang",
+        "genre": "Crime, Drama, Mystery",
+        "rating": "8.4/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQyNjA5NzU5MV5BMl5BanBnXkFtZTgwMDk1MTA5MTE@._V1_SX300.jpg",
+        "synopsis": "When the police in a German city are unable to catch a child-murderer, other criminals join in the manhunt.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Adventures of Robin Hood",
+        "year": "1938",
+        "director": "Michael Curtiz, William Keighley",
+        "genre": "Action, Adventure, Romance",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjZjOTU3MTMtYTM5YS00YjZmLThmNmMtODcwOTM1NmRiMWM2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "synopsis": "When Prince John and the Norman Lords begin oppressing the Saxon masses in King Richard's absence, a Saxon lord fights back as the outlaw leader of a rebel guerrilla army.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Midnight Cowboy",
+        "year": "1969",
+        "director": "John Schlesinger",
+        "genre": "Drama",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTgwZmIzMmYtZjE3Yy00NzgzLTgxNmUtNjlmZDlkMzlhOTJkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+        "synopsis": "A naive hustler travels from Texas to New York to seek personal fortune but, in the process, finds himself a new friend.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "Paris, Texas",
+        "year": "1984",
+        "director": "Wim Wenders",
+        "genre": "Drama",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2RjMmU3ZWItYzBlMy00ZmJkLWE5YzgtNTVkODdhOWM3NGZhXkEyXkFqcGdeQXVyNDA5Mjg5MjA@._V1_SX300.jpg",
+        "synopsis": "Travis Henderson, an aimless drifter who has been missing for four years, wanders out of the desert and must reconnect with society, himself, his life, and his family.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Lego Movie",
+        "year": "2014",
+        "director": "Phil Lord, Christopher Miller",
+        "genre": "Animation, Action, Adventure",
+        "rating": "7.8/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_SX300.jpg",
+        "synopsis": "An ordinary Lego construction worker, thought to be the prophesied 'Special', is recruited to join a quest to stop an evil tyrant from gluing the Lego universe into eternal stasis.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "The Help",
+        "year": "2011",
+        "director": "Tate Taylor",
+        "genre": "Drama",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM5OTMyMjIxOV5BMl5BanBnXkFtZTcwNzU4MjIwNQ@@._V1_SX300.jpg",
+        "synopsis": "An aspiring author during the civil rights movement of the 1960s decides to write a book detailing the African American maids' point of view on the white families for which they work, and the hardships they go through on a daily basis.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Big Fish",
+        "year": "2003",
+        "director": "Tim Burton",
+        "genre": "Adventure, Drama, Fantasy",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyMzM3MzgyNV5BMl5BanBnXkFtZTcwMTI4MzUyMQ@@._V1_SX300.jpg",
+        "synopsis": "A frustrated son tries to determine the fact from fiction in his dying father's life.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Ace in the Hole",
+        "year": "1951",
+        "director": "Billy Wilder",
+        "genre": "Drama, Film-Noir",
+        "rating": "8.2/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDUzZjlhZTYtN2E5MS00ODQ3LWI1ZjgtNzdiZmI0NTZiZTljXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_SX300.jpg",
+        "synopsis": "A frustrated former big-city journalist now stuck working for an Albuquerque newspaper exploits a story about a man trapped in a cave to re-jump start his career, but the situation quickly escalates into an out-of-control circus.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Terminator 2: Judgment Day",
+        "year": "1991",
+        "director": "James Cameron",
+        "genre": "Action, Sci-Fi, Thriller",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDM2YjYwYWMtMWZlNi00ZDQxLWExMDctMDAzNzQ0OTkzZjljXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "synopsis": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son, John Connor, from a more advanced cyborg.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Quiet Man",
+        "year": "1952",
+        "director": "John Ford",
+        "genre": "Comedy, Drama, Romance",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWM1ZDhlM2MtNDNmMi00MDk4LTg5MjgtODE4ODk1MjYxOTIwXkEyXkFqcGdeQXVyNjc0MzMzNjA@._V1_SX300.jpg",
+        "synopsis": "A retired American boxer returns to the village of his birth in Ireland, where he finds love.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "The Man Who Shot Liberty Valance",
+        "year": "1962",
+        "director": "John Ford",
+        "genre": "Action, Drama, Western",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGEyNzhkYzktMGMyZS00YzRiLWJlYjktZjJkOTU5ZDY0ZGI4XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+        "synopsis": "A senator, who became famous for killing a notorious outlaw, returns for the funeral of an old friend and tells the truth about his deed.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Fighter",
+        "year": "2010",
+        "director": "David O. Russell",
+        "genre": "Biography, Drama, Sport",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM0ODk3MjM1MV5BMl5BanBnXkFtZTcwNzc1MDIwNA@@._V1_SX300.jpg",
+        "synopsis": "A look at the early years of boxer \"Irish\" Micky Ward and his brother who helped train him before going pro in the mid 1980s.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "The Chaos Class Is Waking Up",
+        "year": "1976",
+        "director": "Ertem Egilmez",
+        "genre": "Comedy",
+        "rating": "8.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDk3NTRlMzgtZDc3OS00MGY4LWFlYjEtOTAyODA2MWEwN2Y3XkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_SX300.jpg",
+        "synopsis": "A kind and hardworking student joins to Hababam Sinifi (The Chaos Class) but they don't accept him as one of them and he becomes the target of all class' pranks.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Chaos Class Is on Vacation",
+        "year": "1978",
+        "director": "Ertem Egilmez",
+        "genre": "Adventure, Comedy, Drama",
+        "rating": "8.8/10",
+        "poster": "http://ia.media-imdb.com/images/M/MV5BYmY3ZTMzMWQtNDhiYS00ZTE1LThhNzItYjk2MDU0OWM2MDBkXkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_SX300.jpg",
+        "synopsis": "Hababam Sinifi (The Chaos Class) continue to their adventures. Now first female students of the school history joins to the class and all Hababam Sinifi fight each other for them at first ...",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Paths of Glory",
+        "year": "1957",
+        "director": "Stanley Kubrick",
+        "genre": "Drama, War",
+        "rating": "8.5/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTI5Nzc0OTMtYzBkMS00NjkxLThmM2UtNjM2ODgxN2M5NjNkXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg",
+        "synopsis": "After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Lion in Winter",
+        "year": "1968",
+        "director": "Anthony Harvey",
+        "genre": "Biography, Drama, History",
+        "rating": "8.1/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkzNzYyMzA5N15BMl5BanBnXkFtZTgwODcwODQ3MDI@._V1_SX300.jpg",
+        "synopsis": "1183 AD: King Henry II's three sons all want to inherit the throne, but he won't commit to a choice. They and his wife variously plot to force him.",
+        "strength": 8,
+        "life": 16
       },
       {
         "title": "Stalag 17",
@@ -207,85 +466,105 @@
         "genre": "Drama, War",
         "rating": "8.0/10",
         "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDMyNGU0NjUtNTIxMC00ZmU2LWE0ZGItZTdkNGVlODI2ZDcyL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+        "synopsis": "When two escaping American World War II prisoners are killed, the German POW camp barracks black marketeer, J.J. Sefton, is suspected of being an informer.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Glory",
+        "year": "1989",
+        "director": "Edward Zwick",
+        "genre": "Biography, Drama, History",
+        "rating": "7.9/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNDEwZGItZGI1Yy00YjU0LTlkY2YtMGEzODQ0ZjZjMzBhL2ltYWdlXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+        "synopsis": "Robert Gould Shaw leads the U.S. Civil War's first all-black volunteer company, fighting prejudices from both his own Union Army, and the Confederates.",
+        "strength": 7,
+        "life": 14
+      },
+      {
+        "title": "Forrest Gump",
+        "year": "1994",
+        "director": "Robert Zemeckis",
+        "genre": "Comedy, Drama, Romance",
+        "rating": "8.8/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYThjM2MwZGMtMzg3Ny00NGRkLWE4M2EtYTBiNWMzOTY0YTI4XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
+        "synopsis": "Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "The Shawshank Redemption",
+        "year": "1994",
+        "director": "Frank Darabont",
+        "genre": "Crime, Drama",
+        "rating": "9.3/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg",
+        "synopsis": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "strength": 9,
+        "life": 18
+      },
+      {
+        "title": "Star Trek",
+        "year": "2009",
+        "director": "J.J. Abrams",
+        "genre": "Action, Adventure, Sci-Fi",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE5NDQ5OTE4Ml5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_SX300.jpg",
+        "synopsis": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Rain Man",
+        "year": "1988",
+        "director": "Barry Levinson",
+        "genre": "Drama",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzVjNzI4NzYtMjE4NS00M2IzLWFkOWMtOTYwMWUzN2ZlNGVjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "synopsis": "Selfish yuppie Charlie Babbitt's father left a fortune to his savant brother Raymond and a pittance to Charlie; they travel cross-country.",
+        "strength": 8,
+        "life": 16
+      },
+      {
+        "title": "Planet of the Apes",
+        "year": "1968",
+        "director": "Franklin J. Schaffner",
+        "genre": "Adventure, Sci-Fi",
+        "rating": "8.0/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0NjUwMzg5NF5BMl5BanBnXkFtZTgwNDQ0NjcwMTE@._V1_SX300.jpg",
+        "synopsis": "An astronaut crew crash-lands on a planet in the distant future where intelligent talking apes are the dominant species, and humans are the oppressed and enslaved.",
         "strength": 8,
         "life": 16
       }
     ],
     "moviedex": [
-
-    ]
-  },
-  {
-    "slot": 3,
-    "position": [
-      50,
-      60
-    ],
-    "life": 20,
-    "strength": 9,
-    "movies": [
       {
-        "title": "Spartacus",
-        "year": "1960",
-        "director": "Stanley Kubrick",
-        "genre": null,
+        "title": "Letters from Iwo Jima",
+        "year": "2006",
+        "director": "Clint Eastwood",
+        "genre": "Drama, History, War",
         "rating": "7.9/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjc4MTUxN2UtMmU1NC00MjQyLTk3YTYtZTQ0YzEzZDc0Njc0XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-        "strength": 7,
-        "life": 14
-      },
-      {
-        "title": "All About My Mother",
-        "year": "1999",
-        "director": "Pedro Almodóvar",
-        "genre": null,
-        "rating": "7.9/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3OTg3MTk2NV5BMl5BanBnXkFtZTcwNzA4ODMyMQ@@._V1_SX300.jpg",
-        "strength": 7,
-        "life": 14
-      }
-    ],
-    "moviedex": [
-      {
-        "title": "King Kong",
-        "year": "1933",
-        "director": "Merian C. Cooper, Ernest B. Schoedsack",
-        "genre": null,
-        "rating": "7.9/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODM0MTEyMjQxOF5BMl5BanBnXkFtZTgwNzYwNTk1MjE@._V1._CR8.883331298828125,6.5333404541015625,344,488_SY132_CR2,0,89,132_AL_.jpg_V1_SX300.jpg",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0NzgwODI4M15BMl5BanBnXkFtZTcwNjg3OTA0MQ@@._V1_SX300.jpg",
+        "synopsis": "The story of the battle of Iwo Jima between the United States and Imperial Japan during World War II, as told from the perspective of the Japanese who fought it.",
         "strength": 7,
         "life": -1
       },
       {
-        "title": "The Big Sleep",
-        "year": "1946",
-        "director": "Howard Hawks",
-        "genre": null,
-        "rating": "8.0/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjg5MjM5MzY5M15BMl5BanBnXkFtZTgwNjg3MzgyMjE@._V1_SX300.jpg",
+        "title": "Wild Strawberries",
+        "year": "1957",
+        "director": "Ingmar Bergman",
+        "genre": "Drama, Romance",
+        "rating": "8.2/10",
+        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjgwNjI3NTM1MF5BMl5BanBnXkFtZTgwNzY3MTUyMjE@._V1_SX300.jpg",
+        "synopsis": "After living a life marked by coldness, an aging professor is forced to confront the emptiness of his existence.",
         "strength": 8,
         "life": -2
-      },
-      {
-        "title": "The Right Stuff",
-        "year": "1983",
-        "director": "Philip Kaufman",
-        "genre": null,
-        "rating": "7.9/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTUwMDA3MTYtZjhjMi00ODFmLTg5ZTAtYzgwN2NlODgzMmUwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
-        "strength": 7,
-        "life": 0
-      },
-      {
-        "title": "The Sixth Sense",
-        "year": "1999",
-        "director": "M. Night Shyamalan",
-        "genre": null,
-        "rating": "8.1/10",
-        "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMWM4NTFhYjctNzUyNi00NGMwLTk3NTYtMDIyNTZmMzRlYmQyXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_SX300.jpg",
-        "strength": 8,
-        "life": 0
       }
-    ]
+    ],
+    "index": 2
+  },
+  {
+  },
+  {
   }
 ]

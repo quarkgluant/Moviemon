@@ -32,9 +32,9 @@ class GameController < ApplicationController
   end
 
   def moviedex
+    # puts $player[:moviedex]
     @film = $player[:moviedex][$player[:index]] unless $player[:index].nil?
-    # $view = "moviedex"
-    # redirect_to :"#{$view}"
+    puts $player[:moviedex][ $player[:index] ]
   end
 
   def victory
@@ -147,7 +147,7 @@ class GameController < ApplicationController
     case $view
     when "world_map"
       $player[:position][1] = $player[:position][1] < 10 ? $player[:position][1] : $player[:position][1] -= 10
-      if rand(100) > 50 && $player[:position][0] < 80
+      if rand(100) > 50 && $player[:position][0] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -164,7 +164,7 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][1] = $player[:position][1] > 80 ? $player[:position][1] : $player[:position][1] += 10
-      if rand(100) > 50 && $player[:position][1] < 80
+      if rand(100) > 50 && $player[:position][1] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -181,7 +181,7 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][0] = $player[:position][0] > 80 ? $player[:position][0] : $player[:position][0] += 10
-      if rand(100) > 50 && $player[:position][0] < 80
+      if rand(100) > 50 && $player[:position][0] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -202,7 +202,7 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][0] = $player[:position][0] < 10 ? $player[:position][0] : $player[:position][0] -= 10
-      if rand(100) > 50 && $player[:position][0] < 80
+      if rand(100) > 50 && $player[:position][0] < 90
         $view = "battle"
         $selected = $player[:movies].pop
       end
