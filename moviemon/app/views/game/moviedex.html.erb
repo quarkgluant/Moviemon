@@ -1,4 +1,5 @@
 <div class="moviedex">
+bite
 <% unless @film.nil? %>
   <div>
     <div class="monster">
@@ -11,6 +12,8 @@
     </div>
     <div class="poster"><img src="<%= @film[:poster] %>" /></div> 
   </div>
+  <%else%>
+  prout
 <% end %> 
 <div><%= image_tag("moviedex.jpg", class: 'moviedex')%></div>
 

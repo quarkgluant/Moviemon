@@ -52,15 +52,14 @@ class GameController < ApplicationController
       redirect_to :"#{$view}"
     else
       $view = 'shutdown'
-      imdb = GameSession.new.get_movie
-        $player = {
-        slot: 1, 
+      $player = {
+        slot: 1,
         position: [0, 0], 
         life: 20, 
         strength: 5, 
         moviedex: [],
         index: 0,
-        movies: imdb
+        movies: []
       }
       redirect_to :"#{$view}"
     end
@@ -81,7 +80,6 @@ class GameController < ApplicationController
         $view = "victory"
         $player[:life] = 20
         $player[:moviedex].push($selected)
-        $player[:index] += 1
         $player[:strength] += 1
         $selected = ""
       else
@@ -199,7 +197,6 @@ class GameController < ApplicationController
     when "moviedex"
       my_index = $player[:index]
       @film = my_index < ($player[:moviedex].length - 1) ? $player[:moviedex][my_index + 1] : $player[:moviedex][0]
-      $view = "moviedex"
       redirect_to :"#{$view}"
     # when "loading_game", "saving_game"
     #   redirect_to :"#{$view}"
@@ -220,7 +217,6 @@ class GameController < ApplicationController
     when "moviedex"
       my_index = $player[:index]
       @film = my_index > 0 ? $player[:moviedex][my_index - 1] : $player[:moviedex][$player[:moviedex].length]
-      $view = "moviedex"
       redirect_to :"#{$view}"
     # when "loading_game", "saving_game"
     #   redirect_to :"#{$view}"
