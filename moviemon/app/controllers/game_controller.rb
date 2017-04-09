@@ -157,7 +157,7 @@ class GameController < ApplicationController
       $player[:position][1] = $player[:position][1] < 10 ? $player[:position][1] : $player[:position][1] -= 10
       if rand(100) > 60 && $player[:position][0] < 90
         $view = "battle"
-        $selected = $player[:movies].pop
+        $selected = $player[:movies].pop if $player[:movies].length > 0
       end
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
@@ -174,7 +174,7 @@ class GameController < ApplicationController
       $player[:position][1] = $player[:position][1] > 80 ? $player[:position][1] : $player[:position][1] += 10
       if rand(100) > 60 && $player[:position][1] < 90
         $view = "battle"
-        $selected = $player[:movies].pop
+        $selected = $player[:movies].pop if $player[:movies].length > 0
       end
       redirect_to :"#{$view}"
     when "loading_game", "saving_game"
@@ -191,7 +191,7 @@ class GameController < ApplicationController
       $player[:position][0] = $player[:position][0] > 80 ? $player[:position][0] : $player[:position][0] += 10
       if rand(100) > 60 && $player[:position][0] < 90
         $view = "battle"
-        $selected = $player[:movies].pop
+        $selected = $player[:movies].pop if $player[:movies].length > 0
       end
       redirect_to :"#{$view}"
     when "moviedex"
@@ -211,7 +211,7 @@ class GameController < ApplicationController
       $player[:position][0] = $player[:position][0] < 10 ? $player[:position][0] : $player[:position][0] -= 10
       if rand(100) > 60 && $player[:position][0] < 90
         $view = "battle"
-        $selected = $player[:movies].pop
+        $selected = $player[:movies].pop if $player[:movies].length > 0
       end
       redirect_to :"#{$view}"
     when "moviedex"
