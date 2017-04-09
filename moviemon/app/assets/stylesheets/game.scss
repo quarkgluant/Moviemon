@@ -98,12 +98,28 @@
 		margin-top: -100px;	
 	}
 
+	.monster table {
+		margin: 0 0 10px 12px;
+	}
+
+	.monster td {
+		padding: 2px;
+	}
+
 	.monster h2 {
 		margin: 20px 0 4px;
 	}
 
-	.monster h3 {
+	.monster h3, .monster h4 {
 		margin: 0;
+	}
+	.moviedex .infos {
+		background-color: rgba(255, 0, 0, 0.3);
+		position: absolute;
+		z-index: 100;
+	}
+	.moviedex .monster {
+		width: 190px !important;
 	}
 
 	.cmd {
@@ -125,6 +141,13 @@
 
 	.moviedex {
 		overflow: hidden;
+	}
+	.moviedex .monster {
+		margin-top: -4px;
+	}
+
+	.moviedex .poster {
+		margin-top: 0px;
 	}
 
 	img.battle {

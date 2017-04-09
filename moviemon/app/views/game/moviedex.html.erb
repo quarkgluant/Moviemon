@@ -1,20 +1,22 @@
 <div class="moviedex">
-bite
-<% unless @film.nil? %>
-  <div>
-    <div class="monster">
-        <h2><%= @film[:title]%></h2>
-        <h3>Year: <%= @film[:year] %></h3>
-        <h3>genre: <%= @film[:genre] %></h3>
-        <h3>Director: <%= @film[:director] %></h3>
-        <h3>IMB ratings: <%= @film[:rating] %></h3>
-        <h3>Synopsis: <%= @film[:synopsis] %></h3>
-    </div>
-    <div class="poster"><img src="<%= @film[:poster] %>" /></div> 
-  </div>
-  <%else%>
-  prout
-<% end %> 
-<div><%= image_tag("moviedex.jpg", class: 'moviedex')%></div>
-
+	<% unless @film.nil? %>
+		<div class="infos">
+			<div class="monster">
+				<h2><%= @film[:title]%></h2>
+				<table>
+					<tr>
+					<td><h4>Year </h4><%= @film[:year] %></td>
+					<td><h4>Genre </h4><%= @film[:genre] %></td>
+					</tr>
+					<tr>
+						<td><h4>Director</h4> <%= @film[:director] %></td>
+						<td><h4>IMB ratings</h4> <%= @film[:rating] %></td>
+					</tr>
+				</table>
+				<h3>Synopsis</h3> <%= @film[:synopsis] %>
+			</div>
+			<div class="poster"><img src="<%= @film[:poster] %>" /></div> 
+		</div>
+	<% end %> 
+	<div><%= image_tag("moviedex.jpg", class: 'moviedex')%></div>
 </div>

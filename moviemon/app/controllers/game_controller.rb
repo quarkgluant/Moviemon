@@ -196,7 +196,8 @@ class GameController < ApplicationController
       redirect_to :"#{$view}"
     when "moviedex"
       my_index = $player[:index]
-      @film = my_index < ($player[:moviedex].length - 1) ? $player[:moviedex][my_index + 1] : $player[:moviedex][0]
+      my_index < ($player[:moviedex].length - 1) ? my_index = my_index + 1: my_index = 0
+      $player[:index] = my_index
       redirect_to :"#{$view}"
     # when "loading_game", "saving_game"
     #   redirect_to :"#{$view}"
@@ -216,7 +217,9 @@ class GameController < ApplicationController
       redirect_to :"#{$view}"
     when "moviedex"
       my_index = $player[:index]
-      @film = my_index > 0 ? $player[:moviedex][my_index - 1] : $player[:moviedex][$player[:moviedex].length]
+      my_index < ($player[:moviedex].length - 1) ? my_index = my_index - 1: my_index = 0
+
+      $player[:index] = my_index
       redirect_to :"#{$view}"
     # when "loading_game", "saving_game"
     #   redirect_to :"#{$view}"
