@@ -1,5 +1,5 @@
 require 'uri'
-require 'json'
+# require 'json'
 require 'net/http'
 
 class GameSession
@@ -32,7 +32,7 @@ class GameSession
 
   def get_movie
     @my_movies = []
-    50.times {|| @my_movies << JSON.parse(Net::HTTP.get(URI('https://random-movie.herokuapp.com/random'))) }
+    50.times { @my_movies << JSON.parse(Net::HTTP.get(URI("https://random-movie.herokuapp.com/random"))) }
     @my_moviemons = []
     @my_movies.each do |movie|
       @my_moviemons << {
@@ -42,6 +42,7 @@ class GameSession
         genre: movie["Genre"],
         rating: movie["Ratings"][0]["Value"],
         poster: movie["Poster"],
+        synopsis: movie["Plot"],
         strength: movie["Ratings"][0]["Value"].to_i,
         life: movie["Ratings"][0]["Value"].to_i * 2
       } 

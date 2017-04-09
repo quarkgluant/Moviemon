@@ -9,7 +9,8 @@ class GameController < ApplicationController
     position: [0, 0], 
     life: 20, 
     strength: 5, 
-    moviedex: []
+    moviedex: [],
+    index: 0
   }
 
   def title_screen
@@ -31,6 +32,9 @@ class GameController < ApplicationController
   end
 
   def moviedex
+    @film = $player[:moviedex][$player[:index]] unless $player[:index].nil?
+    # $view = "moviedex"
+    # redirect_to :"#{$view}"
   end
 
   def victory
@@ -53,7 +57,8 @@ class GameController < ApplicationController
         position: [0, 0], 
         life: 20, 
         strength: 5, 
-        moviedex: []
+        moviedex: [],
+        index: 0
       }
       redirect_to :"#{$view}"
     end
@@ -74,14 +79,16 @@ class GameController < ApplicationController
         $view = "victory"
         $player[:life] = 20
         $player[:moviedex].push($selected)
-        $player[:strength] = $player[:strength] + 1
+        $player[:index] += 1
+        $player[:strength] += 1
         $selected = ""
       else
         $player[:life] = $player[:life] - $selected[:strength]
         if $player[:life] <= 0
-          $view = "lose"
-          $selected = ""
-          $player[:life] = 20
+          $view, $selected, $player[:life]  = "lose", "", 20
+          # $view,  = "lose"
+          # $selected = ""
+          # $player[:life] = 20
         end
       end
       redirect_to :"#{$view}"
@@ -125,7 +132,7 @@ class GameController < ApplicationController
     case $view
     when "title_screen" #launch new game
       imdb = GameSession.new.get_movie
-      $player = {slot: 1, position: [0, 0], life: 20, strength: 5, movies: imdb, moviedex: []}
+      $player = {slot: 1, position: [0, 0], life: 20, strength: 5, movies: imdb, moviedex: [], index: 0}
       $view = "world_map"
       redirect_to :"#{$view}"
     when "world_map"
@@ -140,7 +147,7 @@ class GameController < ApplicationController
     case $view
     when "world_map"
       $player[:position][1] = $player[:position][1] < 10 ? $player[:position][1] : $player[:position][1] -= 10
-      if rand(100) > 50
+      if rand(100) > 50 && $player[:position][0] < 80
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -157,7 +164,7 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][1] = $player[:position][1] > 80 ? $player[:position][1] : $player[:position][1] += 10
-      if rand(100) > 50
+      if rand(100) > 50 && $player[:position][1] < 80
         $view = "battle"
         $selected = $player[:movies].pop
       end
@@ -174,13 +181,20 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][0] = $player[:position][0] > 80 ? $player[:position][0] : $player[:position][0] += 10
-      if rand(100) > 50
+      if rand(100) > 50 && $player[:position][0] < 80
         $view = "battle"
         $selected = $player[:movies].pop
       end
       redirect_to :"#{$view}"
-    when "loading_game", "saving_game"
-
+    when "moviedex"
+      my_index = $player[:index]
+      @film = my_index < ($player[:moviedex].length - 1) ? $player[:moviedex][my_index + 1] : $player[:moviedex][0]
+      $view = "moviedex"
+      redirect_to :"#{$view}"
+    # when "loading_game", "saving_game"
+    #   redirect_to :"#{$view}"
+    else
+      redirect_to :"#{$view}"
     end
   end
 
@@ -188,14 +202,22 @@ class GameController < ApplicationController
     case $view
     when "world_map" 
       $player[:position][0] = $player[:position][0] < 10 ? $player[:position][0] : $player[:position][0] -= 10
-      if rand(100) > 50
+      if rand(100) > 50 && $player[:position][0] < 80
         $view = "battle"
         $selected = $player[:movies].pop
       end
       redirect_to :"#{$view}"
-    when "loading_game", "saving_game"
-
+    when "moviedex"
+      my_index = $player[:index]
+      @film = my_index > 0 ? $player[:moviedex][my_index - 1] : $player[:moviedex][$player[:moviedex].length]
+      $view = "moviedex"
+      redirect_to :"#{$view}"
+    # when "loading_game", "saving_game"
+    #   redirect_to :"#{$view}"
+    else
+      redirect_to :"#{$view}"
     end
+
   end
   
 end
